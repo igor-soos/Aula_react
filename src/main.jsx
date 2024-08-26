@@ -10,8 +10,8 @@ const router =createBrowserRouter([
   
   {
     //chamando elemento pai
-    path:'/', element:<app/>,
-    errorElement:<error/>,
+    path:'/', element:<App/>,
+    errorElement:<Error/>,
 
    //chamando elemento filho
     children:[
@@ -24,6 +24,6 @@ const router =createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </StrictMode>,
 )
